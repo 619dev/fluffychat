@@ -2,16 +2,16 @@
   "version": 2,
   "builds": [
     {
-      "src": "build/web/**",
+      "src": "/web/build/web/**",
       "use": "@vercel/static"
     }
   ],
   "rewrites": [
-  { "source": "/(.*\\.wasm)", "destination": "/build/web/$1" },
-  { "source": "/(.*\\.js)", "destination": "/build/web/$1" },
-  { "source": "/(.*\\.json)", "destination": "/build/web/$1" },
-  { "source": "/assets/(.*)", "destination": "/build/web/assets/$1" },
-  { "source": "/(.*)", "destination": "/build/web/index.html" }
+  { "source": "/(.*\\.wasm)", "destination": "/web/build/web/$1" },
+  { "source": "/(.*\\.js)", "destination": "/web/build/web/$1" },
+  { "source": "/(.*\\.json)", "destination": "/web/build/web/$1" },
+  { "source": "/assets/(.*)", "destination": "/web/build/web/assets/$1" },
+  { "source": "/(.*)", "destination": "/web/build/web/index.html" }
 ],
   "headers": [
     {
