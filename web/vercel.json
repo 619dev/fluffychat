@@ -8,8 +8,20 @@
   ],
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/(.*\\.wasm)",
       "destination": "/build/web/$1"
+    },
+    {
+      "source": "/(.*\\.js)",
+      "destination": "/build/web/$1"
+    },
+    {
+      "source": "/(.*\\.json)",
+      "destination": "/build/web/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/build/web/index.html"
     }
   ],
   "headers": [
